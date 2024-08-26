@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+        .nav-btn{
+            @apply text-white hover:text-slate-200;
+        }
+    }
