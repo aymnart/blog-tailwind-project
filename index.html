@@ -6,37 +6,225 @@
     <title> Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-500">
-<header class="">
-    <nav class="justify-between flex mx-auto my-2 px-4 fixed w-full items-center capitalize font-medium">
-        <img src="" alt="logo" class="">
-        <ul class="flex gap-7">
-            <li class="text-white hover:text-slate-200"><a href="#">hotel</a></li>
-            <li class="text-white hover:text-slate-200"><a href="#">flight</a></li>
-            <li class="text-white hover:text-slate-200"><a href="#">train</a></li>
-            <li class="text-white hover:text-slate-200"><a href="#">travel</a></li>
-            <li class="text-white hover:text-slate-200"><a href="#">car rental</a></li>
-        </ul>
-        <input type="search" placeholder="search desination..." class="p-2 px-6 w-72 bg-slate-300 rounded-md focus:outline-slate-100">
-        <div class="flex gap-7 items-center">
-            <svg class="bg-white rounded-full p-1" xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 -960 960 960" width="2rem" fill="bg-slate-700"><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg>
-            <details class="uppercase">
-                <summary class="list-none cursor-pointer text-white hover:text-slate-200"> 
-                    en
-                </summary>
-                
-                <div class="absolute text-center ">
-                    <option class="mt-3 cursor-pointer text-white hover:text-slate-200 " value=""><a href="#">fr</a></option>
-                    <option class="mt-3 cursor-pointer text-white hover:text-slate-200 " value=""><a href="#">ar</a></option>
-                </div>
-            </details>
+<body>
+    <header class="h-screen ">
+        <nav class="z-10 justify-between flex mx-auto my-2 px-4 fixed w-full items-center capitalize font-medium">
+            <img src="" alt="logo" class="">
+            <ul class="flex gap-7">
+                <li class="text-white border-b-2 border-transparent hover:border-b-2 hover:border-white"><a href="#">hotel</a></li>
+                <li class="text-white border-b-2 border-transparent hover:border-b-2 hover:border-white"><a href="#">flight</a></li>
+                <li class="text-white border-b-2 border-transparent hover:border-b-2 hover:border-white"><a href="#">train</a></li>
+                <li class="text-white border-b-2 border-transparent hover:border-b-2 hover:border-white"><a href="#">travel</a></li>
+                <li class="text-white border-b-2 border-transparent hover:border-b-2 hover:border-white"><a href="#">car rental</a></li>
+            </ul>
+            <input type="search" placeholder="Search desination..." class="p-2 px-6 w-72 bg-slate-50/55 text-white rounded-md focus:outline-white placeholder:text-white">
             <div class="flex gap-7 items-center">
-                <a class="text-white hover:text-slate-200" href="#">login</a>
-                <a class="py-3 px-5 rounded-md bg-white hover:bg-slate-200" href="#">sign up</a>
+                <svg class="bg-white rounded-full p-1" xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 -960 960 960" width="2rem" fill="bg-slate-700"><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg>
+                <details class="uppercase">
+                    <summary class="list-none cursor-pointer text-white hover:text-slate-200"> 
+                        en
+                    </summary>
+                    
+                    <div class="mt-2 absolute text-center bg-slate-50 text-black rounded gap-2">
+                        <option class="my-2 cursor-pointer hover:bg-slate-200 px-6 py-1 w-full rounded font-medium" value=""><a href="#">fr</a></option>
+                        <option class="my-2 cursor-pointer hover:bg-slate-200 px-6 py-1 w-full rounded font-medium" value=""><a href="#">ar</a></option>
+                    </div>
+                </details>
+                <div class="flex gap-7 items-center">
+                    <a class="text-white hover:text-slate-200" href="#">login</a>
+                    <a class="py-2 px-5 rounded-md bg-white hover:bg-slate-200" href="#">sign up</a>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
-    
+        </nav>
+        <section class="h-screen overflow-hidden ">
+            <img class="-z-50 w-full bg-cover" src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" ></img>
+        </section>
+
+    </header>
+    <section class="mx-auto">
+ 
+
+        <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:mx-0">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl capitalize">blog</h2>
+                <p class="mt-2 text-lg leading-8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, ducimus.</p>
+              </div>
+              <ul class="flex gap-5 my-7">
+                <li><a class="capitalize px-5 py-2 hover:bg-gray-400 rounded hover:text-white" href="#">all</a></li>
+                <li><a class="capitalize px-5 py-2 hover:bg-gray-400 rounded hover:text-white" href="#">destination</a></li>
+                <li><a class="capitalize px-5 py-2 hover:bg-gray-400 rounded hover:text-white" href="#">lifestyle</a></li>
+                <li><a class="capitalize px-5 py-2 hover:bg-gray-400 rounded hover:text-white" href="#">tips and hacks</a></li>
+                <li><a class="capitalize px-5 py-2 hover:bg-gray-400 rounded hover:text-white" href="#">travel</a></li>
+            </ul>
+              <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Boost your conversion rate
+                      </a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Michael Foster
+                        </a>
+                      </p>
+                      <p class="text-gray-600">Co-Founder / CTO</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Boost your conversion rate
+                      </a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Michael Foster
+                        </a>
+                      </p>
+                      <p class="text-gray-600">Co-Founder / CTO</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Boost your conversion rate
+                      </a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Michael Foster
+                        </a>
+                      </p>
+                      <p class="text-gray-600">Co-Founder / CTO</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Boost your conversion rate
+                      </a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Michael Foster
+                        </a>
+                      </p>
+                      <p class="text-gray-600">Co-Founder / CTO</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Boost your conversion rate
+                      </a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Michael Foster
+                        </a>
+                      </p>
+                      <p class="text-gray-600">Co-Founder / CTO</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex max-w-xl flex-col items-start justify-between">
+                  <div class="flex items-center gap-x-4 text-xs">
+                    <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                    <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  </div>
+                  <div class="group relative">
+                    <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Boost your conversion rate
+                      </a>
+                    </h3>
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                  </div>
+                  <div class="relative mt-8 flex items-center gap-x-4">
+                    <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-gray-900">
+                        <a href="#">
+                          <span class="absolute inset-0"></span>
+                          Michael Foster
+                        </a>
+                      </p>
+                      <p class="text-gray-600">Co-Founder / CTO</p>
+                    </div>
+                  </div>
+                </article>
+          
+                <!-- More posts... -->
+              </div>
+            </div>
+          </div>
+    </section>
 </body>
 </html>
